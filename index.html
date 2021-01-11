@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col">
+        <div class="row">
+          <form class="login-form d-flex flex-column align-items-start border">
+            <h1>Log in</h1>
+            <input id="email" type="email" placeholder="Your email">
+            <input id="password" type="password" placeholder="Your password">
+            <input type="submit" value="Log in">
+            <p>Don't have an account yet? <router-link to="/register">Register</router-link></p>
+            <a href="https://backend-5i4olyndpa-ew.a.run.app/api/accounts/auth/facebook">Log in with Facebook</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

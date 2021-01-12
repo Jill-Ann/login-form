@@ -10,18 +10,21 @@
   <body>
     <div class="container">
       <div class="col">
-        <div class="row">
-          <form class="login-form d-flex flex-column align-items-start border">
-            <h1>Log in</h1>
-            <input id="email" type="email" placeholder="Your email">
-            <input id="password" type="password" placeholder="Your password">
-            <input type="submit" value="Log in">
-            <p>Don't have an account yet? <router-link to="/register">Register</router-link></p>
-            <a href="https://backend-5i4olyndpa-ew.a.run.app/api/accounts/auth/facebook">Log in with Facebook</a>
-          </form>
+        <div class="row vh-100 d-flex justify-content-center align-items-center">
+          <div class="form-container h-40">
+            <form class="login-form d-flex flex-column m-4 p-5">
+              <h1 class="mb-4">Log in</h1>
+              <input class="form-elem my-2 p-2" id="email" type="email" placeholder="Your email">
+              <input class="form-elem my-2 p-2" id="password" type="password" placeholder="Your password">
+              <input class="form-elem my-2 p-2"type="submit" value="Log in">
+              <p class="form-elem my-2 p-1">Don't have an account yet? <a href="/register">Register</a></p>
+              <a class="form-elem my-2 p-1" href="https://backend-5i4olyndpa-ew.a.run.app/api/accounts/auth/facebook">Log in with Facebook</a>
+            </form>
+        </div>
         </div>
       </div>
     </div>
+
     
   </body>
 </html>
